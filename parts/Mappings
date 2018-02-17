@@ -1,0 +1,15 @@
+{
+  "Mappings" : {
+    "FileNameTable" : {
+      "VPC001" : {
+        "FileName" : "https://s3.us-east-2.amazonaws.com/cf-templates-j648jx7tgtus-us-east-2/"
+      },
+      "Key02" : {
+        "Name" : "Value02"
+      },
+      "Key03" : {
+        "Name" : "Value03"
+      }
+    }
+  }
+}
