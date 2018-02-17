@@ -1,5 +1,5 @@
 {
-  "AWSTemplateFormatVersion" : "2010-09-09",
+  "AWSTemplateFormatVersion" : "2018-02-18",
   "Resources" : {
     "VPC001" : {
       "Type" : "AWS::EC2::VPC",
