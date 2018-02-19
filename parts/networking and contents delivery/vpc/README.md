@@ -17,7 +17,6 @@
       }  
     }  
   },  
-```rb
   "Resources": {  
     "VPCStack": {  
       "Type": "AWS::CloudFormation::Stack",  
@@ -26,7 +25,6 @@
       }  
     }  
   } 
-``` 
 }  
 ~~~~
  
