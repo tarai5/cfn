@@ -8,10 +8,11 @@
 çÏê¨Ç≥ÇÍÇΩVPCÇÃò_óùID
 
 # ó·
-{  
-  "Mappings" : {  
-    "CloudFormationSettings" : {  
-      "S3" : {  
+~~~~
+{
+  "Mappings" : {
+    "CloudFormationSettings" : {
+      "S3" : {
         "TemplateDir" : "https://s3.us-east-2.amazonaws.com/cf-templates-j648jx7tgtus-us-east-2/"  
       }  
     }  
@@ -25,4 +26,5 @@
     }  
   }  
 }  
+~~~~
  
