@@ -17,6 +17,7 @@
       }  
     }  
   },  
+```rb
   "Resources": {  
     "VPCStack": {  
       "Type": "AWS::CloudFormation::Stack",  
@@ -24,7 +25,8 @@
         "TemplateURL"     : { "Fn::Join": ["", [{ "Fn::FindInMap": [ "CloudFormationSettings", "S3", "TemplateDir"]},"vpc.json"]]}   
       }  
     }  
-  }  
+  } 
+``` 
 }  
 ~~~~
  
