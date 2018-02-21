@@ -1,5 +1,5 @@
 "Parameters" : {
-  "VPC" : {
+  "VPC001" : {
     "Type" : "String"
   }
 }
@@ -7,9 +7,9 @@
   "mySubnet" : {
     "Type" : "AWS::EC2::Subnet",
     "Properties" : {
-       "VpcId": { "Ref" : "VPC" },
+       "VpcId": { "Ref" : "VPC001" },
        "CidrBlock" : "10.0.0.0/24",
-       "AvailabilityZone" : "us-east-1a",
+       "AvailabilityZone" : "us-east-2a",
        "Tags" : [ { "Key" : "foo", "Value" : "bar" } ]
     }
   }

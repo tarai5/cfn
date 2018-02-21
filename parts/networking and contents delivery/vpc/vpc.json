@@ -12,7 +12,7 @@
     }
   },
   "Outputs" : {
-    "VPC" : {
+    "VPC001" : {
       "Value" : { "Ref" : "VPC001" }
     }
   }
