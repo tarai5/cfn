@@ -7,11 +7,28 @@
     }
   },
   "Resources": {
+
+
     "VPCStack": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": { 
-        "TemplateURL"     : { "Fn::Join": ["", [{ "Fn::FindInMap": [ "CloudFormationSettings", "S3", "TemplateDir"]},"vpc.json"]]} 
+        "TemplateURL"     : { "Fn::Join": ["", [{ "Fn::FindInMap": [ "CloudFormationSettings", "S3", "TemplateDir"]},"vpc.json"]]},
+      "TimeoutInMinutes": "5"
+      }
+    },
+
+
+    "Subnettack": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL"     : { "Fn::Join": ["", [{ "Fn::FindInMap": [ "CloudFormationSettings", "S3", "TemplateDir"]},"subnet.json"]]},
+        "TimeoutInMinutes": "5",
+	"Parameters"      : {
+          "VPC001": { "Fn::GetAtt" : [ "VPCStack", "Outputs.VPC001" ] }
+        }
       }
     }
+
+
   }
 }

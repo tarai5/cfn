@@ -1,13 +1,13 @@
 "Parameters" : {
-  "VPC001" : {
+  "vpc001" : {
     "Type" : "String"
   }
 }
 "Resources" : {
-  "mySubnet" : {
+  "subnet001" : {
     "Type" : "AWS::EC2::Subnet",
     "Properties" : {
-       "VpcId": { "Ref" : "VPC001" },
+       "VpcId": { "Ref" : "vpc001" },
        "CidrBlock" : "10.0.0.0/24",
        "AvailabilityZone" : "us-east-2a",
        "Tags" : [ { "Key" : "foo", "Value" : "bar" } ]
