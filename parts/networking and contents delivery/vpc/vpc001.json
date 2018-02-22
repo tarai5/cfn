@@ -1,19 +1,19 @@
 {
   "Resources" : {
-    "VPC001" : {
+    "vpc001" : {
       "Type" : "AWS::EC2::VPC",
       "Properties" : {
       "CidrBlock" : "10.0.0.0/16",
       "EnableDnsSupport" : "true",
       "EnableDnsHostnames" : "true",
         "InstanceTenancy" : "default",
-        "Tags" : [ {"Key" : "Name", "Value" : "VPC001"} ]
+        "Tags" : [ {"Key" : "Name", "Value" : "vpc001"} ]
       }
     }
   },
   "Outputs" : {
-    "VPC001" : {
-      "Value" : { "Ref" : "VPC001" }
+    "vpc001" : {
+      "Value" : { "Ref" : "vpc001" }
     }
   }
 }
